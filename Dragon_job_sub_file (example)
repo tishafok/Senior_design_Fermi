@@ -1,0 +1,14 @@
+#MSUB -l nodes=1:ppn=1
+#MSUB -l walltime=24:00:00
+#MSUB -m ae
+#MSUB -M fakuli2@uic.edu
+echo " "
+echo " Job Started on 'hostname' at 'date'"
+echo " "
+
+export PYTHONPATH=$PYTHONPATH:/home/calford2/.local/lib/python3.6/site-packages/tensorflow/models/research:/home/calford2/.local/lib/python3.6/site-packages/tensorflow/models/research/slim
+
+
+cd /home/calford2/.local/lib/python3.6/site-packages/tensorflow/models/research/object_detection
+python3 model_main.py --logtostderr --model_dir=training24/ --pipeline_config_path=training24/pipeline.config
+
