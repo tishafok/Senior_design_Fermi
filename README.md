@@ -1,5 +1,5 @@
-Training Inception SSD V2 Object Detection model with TensorFlow 1.14 on custom "nuts" and "bolts" images dataset
-generated from CAD Rendering for Fermilab.
+Training Inception SSD V2 Object Detection model with TensorFlow 1.14 on custom "nuts" and "bolts" 
+images dataset generated from CAD Rendering for Fermilab.
 
 Achieved 0.857 mAP, 0.699 mAR
 
