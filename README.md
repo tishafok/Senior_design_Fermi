@@ -1,4 +1,9 @@
-Inception V2 Object Detection model training with TensorFlow file content:
+Training Inception SSD V2 Object Detection model with TensorFlow 1.14 on custom "nuts" and "bolts" images dataset
+generated from CAD Rendering for Fermilab.
+
+Achieved 0.857 mAP, 0.699 mAR
+
+File content:
 
 - Dragon Job Sub File used to submit model training job to Dragon supercomputer via Moab/Torque job scheduler
 - Fermi Detection script used to deploy trained model to detect the target objects and locate them in 3D coordinate space
