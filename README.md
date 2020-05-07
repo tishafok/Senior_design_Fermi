@@ -9,7 +9,7 @@ Achieved 0.857 mean Average Precision (mAP), 0.699 mean Average Recall (mAR)
 Instructions:
 - Install Python 3.6 and TensorFlow 1.14 (CPU version)
 - Follow 
-[this Guide](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md "This Guide") to install other librarier & download the tensorflow/models repository.
+[this Guide](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md "This Guide") to install other libraries & download the tensorflow/models repository.
 - Create folder "Dataset" with 2 sub folders: "Test" and "Train".
 - Generate dataset images and divide them 80/20 into train/test.
 - Use LabelImg to create XML label files for images.
