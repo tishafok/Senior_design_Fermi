@@ -25,9 +25,10 @@ Instructions:
  *export PYTHONPATH =$PYTHINPATH:`pwd`:`pwd`/slim*
  - Set: *cd to ~/object_detection*
  - To initialize training run: 
-   *python3 model_main.py --logtostderr \*
- *--model_dir=Training/ \*
- *--pipeline_config_path=Training/pipeline.config* 
+ 
+   *python3 model_main.py --logtostderr \
+ --model_dir=Training/ \
+ --pipeline_config_path=Training/pipeline.config* 
  
 - When training is complete use **export_inference_graph.py** to generate **frozen_inference_graph.pb**
 - Run: 
