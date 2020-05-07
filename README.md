@@ -5,7 +5,7 @@ Trained on UIC Dragon supercomputer, deployed on Nvidia Jetson Nano with Intel R
 
 Achieved 0.857 mean Average Precision (mAP), 0.699 mean Average Recall (mAR)
 
-
+Instructions:
 - Install Python 3.6 and TensorFlow 1.14 (CPU version)
 - Follow 
 [this Guide](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md "This Guide") to install other librarier & download the tensorflow/models repository.
@@ -40,4 +40,6 @@ Achieved 0.857 mean Average Precision (mAP), 0.699 mean Average Recall (mAR)
 - To begin inference run: python3 Fermi_Detection.py 
 
 
-Other files: Dragon_job_sub_file (used to submit model training job to Dragon supercomputer via Moab/Torque job scheduler), List of libraries (list of all libraries and version used to set dependencies for training and deployment), Model_image_tester.py (static script to check model recall accuracy), inception_model_trained_logs (generated during training to check model training progress and accuracy), tf_text_graph_ssd.py (used to generate protobuf txt file for OpenCV DNN module deployment with Intel RealSense D435 camera)
+Other files: 
+
+Dragon_job_sub_file (used to submit model training job to Dragon supercomputer via Moab/Torque job scheduler), List of libraries (list of all libraries and version used to set dependencies for training and deployment), Model_image_tester.py (static script to check model recall accuracy), inception_model_trained_logs (generated during training to check model training progress and accuracy), tf_text_graph_ssd.py (used to generate protobuf txt file for OpenCV DNN module deployment with Intel RealSense D435 camera)
