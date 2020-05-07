@@ -33,6 +33,7 @@ Instructions:
  
 - When training is complete use **export_inference_graph.py** to generate **frozen_inference_graph.pb**
 - Run: 
+
    *python3 export_inference_graph.py \
    --input_type image_tensor \
    --pipeline_config_path Training/pipeline.config \
