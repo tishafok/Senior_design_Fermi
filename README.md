@@ -26,16 +26,17 @@ Instructions:
  - Set: *cd to ~/object_detection*
  - To initialize training run: 
  
-   *python3 model_main.py --logtostderr
-   --model_dir=Training/ 
+   *python3 model_main.py \
+   --logtostderr \
+   --model_dir=Training/ \
    --pipeline_config_path=Training/pipeline.config* 
  
 - When training is complete use **export_inference_graph.py** to generate **frozen_inference_graph.pb**
 - Run: 
-   *python3 export_inference_graph.py
-   --input_type image_tensor
-   --pipeline_config_path Training/pipeline.config
-   --trained_checkpoint_prefix Training/model.ckpt-xxxx
+   *python3 export_inference_graph.py \
+   --input_type image_tensor \
+   --pipeline_config_path Training/pipeline.config \
+   --trained_checkpoint_prefix Training/model.ckpt-xxxx \
    --output_directory GRAPH_DIR*
 
 - Edit PATH_TO_CKPT & PATH_TO_LABELS in **Fermi_Detection.py** to point to **frozen_inference_graph.pb** and **labelmap.pbtxt** files
