@@ -17,6 +17,7 @@ Instructions:
 - To generate .records files run: *python3 TFR_records.py*
 - Download [Inception V2 files](http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_2018_01_28.tar.gz).
 - Set: *cd ~/tensorflow/**models-master**/research/object_detection*
+
 (or *cd ~/tensorflow/**models**/research/object_detection*)
 - Create "Training" folder that contains:
   1. **pipeline.config** and **labelmap.pbtxt** files from [this repository/Final_Model](https://github.com/tishafok/Senior_design_Fermi/tree/master/Final_Model)
