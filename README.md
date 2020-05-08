@@ -59,4 +59,6 @@ Other files:
 **tf_text_graph_ssd.py** (used to generate protobuf txt file for OpenCV DNN module deployment with Intel RealSense D435 camera)
 
 
-Credit: Frantishek Akulich, Christiane Alford, Mazdak Khoshnood and Harsh Gupta
+
+
+_Credit: Frantishek Akulich, Christiane Alford, Mazdak Khoshnood and Harsh Gupta_
