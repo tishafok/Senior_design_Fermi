@@ -13,14 +13,15 @@ Instructions:
 - Create folder "Dataset" with 2 sub folders: "Test" and "Train".
 - Generate dataset images and divide them 80/20 into train/test.
 - Use LabelImg to create XML label files for images.
-- In **TFR_records.py** edit PATH_TEST and PATH_TRAIN to point to Test/Train folders. Set names for PATH_RECORD_TEST & PATH_RECORD_TRAIN
+- In **TFR_records.py** edit **_PATH_TEST_** and **_PATH_TRAIN_** to point to Test/Train folders. Set names for **_PATH_RECORD_TEST_** & **_PATH_RECORD_TRAIN_**
 - To generate .records files run: *python3 TFR_records.py*
 - Download [Inception V2 files](http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_2018_01_28.tar.gz) 
 - Set: *cd ~/tensorflow/models-master/research/object_detection*
 - Create "Training" folder that contains:
   1. **pipeline.config** and **labelmap.pbtxt** files from [this repository/Final_Model](https://github.com/tishafok/Senior_design_Fermi/tree/master/Final_Model)
-  3. **model.ckpt-xxxx** files (where xxxx is latest training step)
-  4. **train.record** & **test.record**
+  3. In **pipeline.config** edit **_fine_tune_checkpoint_**, **_label_map_path_**, **_input_path_**, **_label_map_path_** and **_input_path_** (lines 152-172) to point to checkpoint, labelmap and .record files.
+  4. **model.ckpt-xxxx** files (where xxxx is latest training step)
+  5. **train.record** & **test.record**
  - Set: *cd to ~/research* then set slim directories path
  *export PYTHONPATH =$PYTHINPATH:`pwd`:`pwd`/slim*
  - Set: *cd to ~/object_detection*
@@ -50,7 +51,7 @@ Other files:
 
 **List of libraries** (list of all libraries and version used to set dependencies for training and deployment)
 
-**Model_image_tester.py** (static script to check model recall accuracy)
+**Model_image_tester.py** (single image object detection test)
 
 **inception_model_trained_logs** (generated during training to check model training progress and accuracy)
 
