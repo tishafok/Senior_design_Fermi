@@ -57,3 +57,6 @@ Other files:
 **inception_model_trained_logs** (generated during training to check model training progress and accuracy)
 
 **tf_text_graph_ssd.py** (used to generate protobuf txt file for OpenCV DNN module deployment with Intel RealSense D435 camera)
+
+
+Credit: Frantishek Akulich, Christiane Alford, Mazdak Khoshnood and Harsh Gupta
